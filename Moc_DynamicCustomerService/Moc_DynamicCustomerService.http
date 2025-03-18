@@ -1,0 +1,6 @@
+@Moc_DynamicCustomerService_HostAddress = http://localhost:5284
+
+GET {{Moc_DynamicCustomerService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
