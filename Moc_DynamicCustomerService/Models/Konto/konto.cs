@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Moc_DynamicCustomerService.Models.Konto
+namespace Moc_DynamicCustomerService.Models
 {
     public class Konto
     {

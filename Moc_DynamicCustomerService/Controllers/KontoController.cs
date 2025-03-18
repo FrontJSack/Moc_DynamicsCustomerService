@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Moc_DynamicCustomerService.Models.Konto;
+using Moc_DynamicCustomerService.Models;
 using Moc_DynamicCustomerService.Services.KontoService;
 
 namespace Moc_DynamicCustomerService.Controllers

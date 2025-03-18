@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Moc_DynamicCustomerService.Data;
-using Moc_DynamicCustomerService.Models.Konto;
+using Moc_DynamicCustomerService.Models;
 
 namespace Moc_DynamicCustomerService.Services.KontoService
 {

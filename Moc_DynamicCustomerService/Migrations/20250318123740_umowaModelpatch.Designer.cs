@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Moc_DynamicCustomerService.Data;
 
@@ -10,50 +11,14 @@ using Moc_DynamicCustomerService.Data;
 namespace Moc_DynamicCustomerService.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250318123740_umowaModelpatch")]
+    partial class umowaModelpatch
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
-
-            modelBuilder.Entity("Moc_DynamicCustomerService.Models.Kontakt", b =>
-                {
-                    b.Property<int>("kontaktId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("data_modyfikacji")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("data_utworzenia")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("email")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("imie")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("kontoId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("nazwisko")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("telefon")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("kontaktId");
-
-                    b.HasIndex("kontoId");
-
-                    b.ToTable("Kontakty");
-                });
 
             modelBuilder.Entity("Moc_DynamicCustomerService.Models.Konto", b =>
                 {
@@ -138,17 +103,6 @@ namespace Moc_DynamicCustomerService.Migrations
                     b.HasIndex("kontoId");
 
                     b.ToTable("UmowySla");
-                });
-
-            modelBuilder.Entity("Moc_DynamicCustomerService.Models.Kontakt", b =>
-                {
-                    b.HasOne("Moc_DynamicCustomerService.Models.Konto", "Konto")
-                        .WithMany()
-                        .HasForeignKey("kontoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Konto");
                 });
 
             modelBuilder.Entity("Moc_DynamicCustomerService.Models.Umowa_sla", b =>
