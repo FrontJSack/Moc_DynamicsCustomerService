@@ -7,6 +7,7 @@ namespace Moc_DynamicCustomerService.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
+            
         }
 
         public DbSet<Konto> Konta { get; set; } // Jeśli masz model Konto
