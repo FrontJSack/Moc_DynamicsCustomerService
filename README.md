@@ -29,6 +29,3 @@ Ankiety satysfakcji klienta
 Szablony odpowiedzi
 Zespoły obsługi
 Metryki i KPI
-
-Diagram ERD:
-[ERD_Diagram.pdf](https://github.com/user-attachments/files/19319554/ERD_Diagram.pdf)
