@@ -3,7 +3,7 @@ using Example.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Example.Services;
+namespace Moc_DynamicCustomerService.Services;
 public class CaseService(AppDbContext context) : ICaseService
 {
     private readonly AppDbContext _context = context;
