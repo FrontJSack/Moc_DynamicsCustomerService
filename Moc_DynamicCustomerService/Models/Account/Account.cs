@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
 
 [Index(nameof(CompanyName), IsUnique = true)]
 public class Accounts

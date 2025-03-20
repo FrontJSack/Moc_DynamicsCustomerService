@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
 
 
 

@@ -1,5 +1,5 @@
-using Example.Data;
-using Example.Models;
+using Moc_DynamicCustomerService.Data;
+using Moc_DynamicCustomerService.Models;
 using Microsoft.EntityFrameworkCore;
 
 

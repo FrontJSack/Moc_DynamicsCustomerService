@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using Example.Models;
+using Moc_DynamicCustomerService.Models;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
     public class Sla_contracts
     {
         public int Sla_id { get; set; }

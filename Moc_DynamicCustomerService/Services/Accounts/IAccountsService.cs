@@ -1,4 +1,4 @@
-using Example.Models;
+using Moc_DynamicCustomerService.Models;
 
 namespace Moc_DynamicCustomerService.Services;
 

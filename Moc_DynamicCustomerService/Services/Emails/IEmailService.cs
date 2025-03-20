@@ -1,4 +1,4 @@
-using Example.Models;
+using Moc_DynamicCustomerService.Models;
 
 public interface IEmailService
 {

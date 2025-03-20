@@ -1,4 +1,4 @@
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
 
     public class UpdateNote
     {

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Example.Models;
+using Moc_DynamicCustomerService.Models;
 
-namespace Example.Data;
+namespace Moc_DynamicCustomerService.Data;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
