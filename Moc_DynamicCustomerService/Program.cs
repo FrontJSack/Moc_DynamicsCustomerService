@@ -1,11 +1,11 @@
-using Moc_DynamicsCustomerService.Data;
-using Moc_DynamicsCustomerService.Models;
+using Moc_DynamicCustomerService.Data;
+using Moc_DynamicCustomerService.Models;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Moc_DynamicsCustomerService.Services;
-using Moc_DynamicsCustomerService.Endpoints;
+using Moc_DynamicCustomerService.Services;
+using Moc_DynamicCustomerService.Endpoints;
 
 
 var builder = WebApplication.CreateBuilder(args);

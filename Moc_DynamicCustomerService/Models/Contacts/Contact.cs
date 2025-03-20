@@ -13,9 +13,9 @@ public class Contacts
     public string? LastName { get; set; }
     public string? Email { get; set; }
     public string? Phone { get; set; } 
+    [JsonIgnore]
     public Accounts? Account { get; set; }
     public DateTime DateCreated { get; set; } = DateTime.Now;
     public DateTime? DateUpdated { get; set; }
-        [JsonIgnore]
     public ICollection<Cases>? Cases { get; set; }
 }

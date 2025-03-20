@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using Moc_DynamicCustomerService.Models;
 
 namespace Moc_DynamicCustomerService.Models;
@@ -12,5 +13,6 @@ namespace Moc_DynamicCustomerService.Models;
         public required string Subject { get; set; }
         public required string Content { get; set; }
         public DateTime SendDate { get; set; } = DateTime.Now;
+        [JsonIgnore]
         public Cases? Cases { get; set; }
 }

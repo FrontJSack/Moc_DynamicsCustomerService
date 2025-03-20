@@ -18,6 +18,5 @@ namespace Moc_DynamicCustomerService.Models;
         public ProductCategory Category { get; set;}
         public string? Description { get; set; }
         public decimal Price { get; set; }
-            [JsonIgnore]
         public ICollection<Licenses>? Licenses { get; set; }
     }

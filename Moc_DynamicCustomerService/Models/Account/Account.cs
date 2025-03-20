@@ -17,12 +17,8 @@ public class Accounts
     public string? MainPhone { get; set; }
     public DateTime DateCreated { get; set; } = DateTime.Now;
     public DateTime DateUpdated { get; set; } 
-        [JsonIgnore]
     public ICollection<Contacts>? Contacts { get; set; }
-        [JsonIgnore]
     public ICollection<Cases>? Cases { get; set; }
-    [JsonIgnore]
     public ICollection<Sla_contracts>? Sla_contracts { get; set; }
-        [JsonIgnore]
     public ICollection<Licenses>? Licenses { get; set; }
 }

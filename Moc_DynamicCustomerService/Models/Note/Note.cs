@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using Moc_DynamicCustomerService.Models;
 
 namespace Moc_DynamicCustomerService.Models;
@@ -10,6 +11,8 @@ namespace Moc_DynamicCustomerService.Models;
         public int UserId { get; set; }
         public required string Content { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;
+        [JsonIgnore]
         public Cases? Case { get; set; }
+        [JsonIgnore]
         public Users? User { get; set; }
 }
