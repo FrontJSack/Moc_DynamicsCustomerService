@@ -17,7 +17,8 @@ public static class AccountEndpoints
                 .Include(a => a.Contacts)
                 .Include(a => a.Cases)
                 .ToListAsync();
-            return accounts;
+
+            return Results.Ok(accounts);
         });
 
         accountGroup.MapGet("/{id}", async (int id, AppDbContext context) =>

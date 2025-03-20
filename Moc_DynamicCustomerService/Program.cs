@@ -54,6 +54,14 @@ app.UseHttpsRedirection();
 
 app.MapAccountEndpoints();
 app.MapSlaContractEndpoints();
+app.MapCaseEndpoints();
+app.MapContactEndpoints();
+app.MapEmailEndpoints();
+app.MapLicenseEndpoints();
+app.MapNoteEndpoints();
+app.MapProductEndpoints();
+app.MapReportEndpoints();
+app.MapUserEndpoints();
 
 
 
