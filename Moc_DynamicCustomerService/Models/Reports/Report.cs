@@ -1,4 +1,6 @@
-namespace Example.Models;
+using System.Text.Json.Serialization;
+
+namespace Moc_DynamicCustomerService.Models;
 
 public class Report
 {
@@ -8,5 +10,6 @@ public class Report
     public required string Type { get; set; }
     public required string Parameters { get; set; }
     public DateTime DateCreated { get; set; } = DateTime.Now;
+    [JsonIgnore]
     public Users? User { get; set; }
 }

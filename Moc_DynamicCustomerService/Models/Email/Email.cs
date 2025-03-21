@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Example.Models;
+using System.Text.Json.Serialization;
+using Moc_DynamicCustomerService.Models;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
 
     public class Emails
     {
@@ -12,5 +13,6 @@ namespace Example.Models;
         public required string Subject { get; set; }
         public required string Content { get; set; }
         public DateTime SendDate { get; set; } = DateTime.Now;
+        [JsonIgnore]
         public Cases? Cases { get; set; }
 }

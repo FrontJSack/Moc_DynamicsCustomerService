@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Example.Models;
+using System.Text.Json.Serialization;
+using Moc_DynamicCustomerService.Models;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
     public class Licenses
     {
         public int License_id { get; set; }
@@ -10,6 +11,8 @@ namespace Example.Models;
         public int SeriesNumber { get; set; }
         public DateTime StartDate { get; set; } = DateTime.Now;
         public DateTime EndDate { get; set; }
+        [JsonIgnore]
         public Accounts? Account { get; set; }
+        [JsonIgnore]
         public Products? Products { get; set; }
     }

@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
-using Example.Models;
+using Moc_DynamicCustomerService.Models;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
 
     public enum ProductCategory
     {
@@ -18,6 +18,5 @@ namespace Example.Models;
         public ProductCategory Category { get; set;}
         public string? Description { get; set; }
         public decimal Price { get; set; }
-            [JsonIgnore]
         public ICollection<Licenses>? Licenses { get; set; }
     }

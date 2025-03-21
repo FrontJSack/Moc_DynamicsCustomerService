@@ -5,7 +5,7 @@
 namespace Moc_DynamicCustomerService.Migrations
 {
     /// <inheritdoc />
-    public partial class umowaModel : Migration
+    public partial class Fixed2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Example.Models
+namespace Moc_DynamicCustomerService.Models
 {
 
     public class Update_Email

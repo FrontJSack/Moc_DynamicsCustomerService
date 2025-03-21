@@ -1,12 +1,12 @@
 //CRUD dla Accounts
 // Compare this snippet from Services/Accounts/AccountsService.cs:
 
-using Example.Services;
-using Example.Models;
+using Moc_DynamicCustomerService.Services;
+using Moc_DynamicCustomerService.Models;
 using Microsoft.EntityFrameworkCore;
-using Example.Data;
+using Moc_DynamicCustomerService.Data;
 
-namespace Example.Services
+namespace Moc_DynamicCustomerService.Services
 {
     public class AccountsService(AppDbContext context) : IAccountsService
     {

@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Example.Models;
+using System.Text.Json.Serialization;
+using Moc_DynamicCustomerService.Models;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
     public class Sla_contracts
     {
         public int Sla_id { get; set; }
@@ -12,5 +13,6 @@ namespace Example.Models;
         public int minSolveTime { get; set; }
         public DateTime startDate { get; set; } = DateTime.Now;
         public DateTime endDate { get; set; }
+        [JsonIgnore]
         public Accounts? Account { get; set; }
     }

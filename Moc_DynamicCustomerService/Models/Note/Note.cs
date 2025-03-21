@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Example.Models;
+using System.Text.Json.Serialization;
+using Moc_DynamicCustomerService.Models;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
 
     public class Notes
     {
@@ -10,6 +11,8 @@ namespace Example.Models;
         public int UserId { get; set; }
         public required string Content { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;
+        [JsonIgnore]
         public Cases? Case { get; set; }
+        [JsonIgnore]
         public Users? User { get; set; }
 }

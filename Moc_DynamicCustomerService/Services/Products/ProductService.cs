@@ -1,9 +1,9 @@
-using Example.Data;
-using Example.Models;
+using Moc_DynamicCustomerService.Data;
+using Moc_DynamicCustomerService.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Example.Services;
+namespace Moc_DynamicCustomerService.Services;
 public class ProductService(AppDbContext context) : IProductService
 {
     private readonly AppDbContext _context = context;

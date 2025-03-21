@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Example.Models;
+namespace Moc_DynamicCustomerService.Models;
 
 
 public enum Status {
@@ -26,11 +26,12 @@ public class Cases
     public DateTime DateCreated { get; set; } = DateTime.Now;
     public DateTime? DateClosed { get; set; }
     public DateTime? DueDate { get; set; }
+    [JsonIgnore]
     public Contacts? Contact { get; set; }
+    [JsonIgnore]
     public Accounts? Account { get; set; }
+    [JsonIgnore]
     public Users? User { get; set; }
-        [JsonIgnore]
     public ICollection<Notes>? Notes { get; set; }
-        [JsonIgnore]
     public ICollection<Emails>? Emails { get; set;}
 }

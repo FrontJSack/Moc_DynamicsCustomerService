@@ -1,6 +1,6 @@
-using Example.Models;
+using Moc_DynamicCustomerService.Models;
 
-namespace Example.Services;
+namespace Moc_DynamicCustomerService.Services;
 
 public interface IAccountsService
 {
